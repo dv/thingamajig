@@ -1,5 +1,5 @@
 class Thingamajig
-  class Project < OsaObject
+  class Project < Todo
     include Container
 
     def self.find_by(name:)
@@ -7,7 +7,9 @@ class Thingamajig
     end
 
     def create_todo!(name, notes)
-      Thingamajig::Todo.new @osa_object.make(new: :to_do, with_properties: {name: name, notes: notes})
+      new_osa_object = osa_object.make(new: :to_do, with_properties: {name: name, notes: notes})
+
+      Thingamajig::Todo.new(new_osa_object)
     end
 
     def inspect
