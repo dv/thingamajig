@@ -25,4 +25,10 @@ class Thingamajig
       Thingamajig::Project.new(osa_project)
     end
   end
+
+  def todos
+    app.to_dos.get.map do |osa_todo|
+      Thingamajig::Todo.new(osa_todo)
+    end
+  end
 end
