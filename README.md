@@ -46,6 +46,8 @@ This README is severaly lacking in instructions. Here's some sample code that mi
   end
 ```
 
+### Naming
+
 If you're tired of typing "Thingamajig" out in full, feel free to alias it:
 
 ```ruby
@@ -69,6 +71,17 @@ And then execute:
 Or install it yourself as:
 
     $ gem install thingamajig
+
+## Example Usage
+
+I use Thingamajig extensively in my personal automated workflows. You can find the source code here: https://github.com/dv/dotworkflows
+
+## Research
+
+A lot of this was done through trial-and-error. Helpful resources:
+
+- [The official documentation by Cultured Code](https://culturedcode.com/things/download/Things3AppleScriptGuide.pdf) (beware, it's full of mistakes).
+- Example of connecting to the underlying SQLite3 database: https://github.com/lucbeaulieu/KanbanView
 
 ## Development
 
