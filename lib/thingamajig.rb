@@ -3,6 +3,7 @@ require "thingamajig/version"
 require "thingamajig/osa_object"
 require "thingamajig/area"
 require "thingamajig/project"
+require "thingamajig/list"
 require "thingamajig/todo"
 
 class Thingamajig
