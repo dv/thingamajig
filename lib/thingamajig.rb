@@ -1,6 +1,8 @@
 require "rb-scpt"
 require "thingamajig/version"
 require "thingamajig/osa_object"
+require "thingamajig/modules/container"
+
 require "thingamajig/area"
 require "thingamajig/project"
 require "thingamajig/list"

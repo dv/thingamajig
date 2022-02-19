@@ -1,5 +1,7 @@
 class Thingamajig
   class List < OsaObject
+    include Container
+
     class << self
       def find_by(name:)
         Thingamajig::List.new(Thingamajig.new.osa_object.lists[name])
