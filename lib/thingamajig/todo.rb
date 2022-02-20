@@ -16,6 +16,10 @@ class Thingamajig
       self.status == :canceled
     end
 
+    def marked?
+      completed? || canceled?
+    end
+
     def active? # meaning in "Today"
       activation_date && activation_date <= Date.today.to_time
     end
