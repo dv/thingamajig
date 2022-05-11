@@ -31,4 +31,9 @@ class Thingamajig
       Thingamajig::Todo.new(osa_todo)
     end
   end
+
+  # Whether or not the application is focused in MacOS
+  def frontmost?
+    app.frontmost.get
+  end
 end

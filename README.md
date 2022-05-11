@@ -44,6 +44,9 @@ This README is severaly lacking in instructions. Here's some sample code that mi
     # For each project, get the todos that are active and have status "open" (not completed or cancelled)
     project.todos(Thingamajig::Todo.predicate_active.and(Thingamajig::Todo.predicate_open))
   end
+
+  # Check whether Things is in focus
+  Thingamajig.new.frontmost? # => false
 ```
 
 ### Naming
